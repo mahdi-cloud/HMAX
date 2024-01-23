@@ -10,16 +10,10 @@ For the labeling part of our model, we have collected the validated tumor or CH-
 ## Repository Navigation Guide
 
 ### Code
-#### SSGAN
-•	A repository dedicated to training and validating SSGAN for somatic mutation labeling using both labeled and unlabeled data.
-#### Preprocessing
-•	Performs preprocessing on both labeled and unlabeled data.
-•	Note: Unlabeled data in xlsx format of VCF files requires an additional preprocessing step compared to labeled data.
-#### Train
-•	The training function takes the model, data, and hyperparameters as input and trains the model.
-•	Two distinct functions for unsupervised and supervised training. GAN model trains on unlabeled data. Classifier trains on labeled data.
-#### Model
-•	Implements the SSGAN structure and essential functions in the .py file.
+•	SSGAN: A repository dedicated to training and validating SSGAN for somatic mutation labeling using both labeled and unlabeled data.
+•	Preprocessing: Performs preprocessing on both labeled and unlabeled data. Unlabeled data in xlsx format of VCF files requires an additional preprocessing step compared to labeled data.
+•	Train: The training function takes the model, data, and hyperparameters as input and trains the model. Two distinct functions for unsupervised and supervised training. GAN model trains on unlabeled data. Classifier trains on labeled data.
+•	Model: Implements the SSGAN structure and essential functions in the .py file.
 ### Data
 •	Unlabeled and labeled data serve as inputs for the model, both in xlsx format.
 •	Each xlsx file corresponds to a .txt file containing approximately 20 upstream and downstream nucleotides.
